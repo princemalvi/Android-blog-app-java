@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBlogFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="cursive"
+            android:text="Write a Post"
+            android:textAlignment="center"
+            android:textColor="#AF3D3D"
+            android:textSize="50dp" />
+
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_round_border"
+            android:hint="Title"
+            android:maxLines="1"
+            android:textColorHint="#9B9A9A" />
+
+        <EditText
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_round_border"
+            android:hint="Category"
+            android:maxLines="1"
+            android:textColorHint="#9B9A9A" />
+
+
+        <EditText
+            android:id="@+id/postDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_round_border"
+            android:hint="Title"
+            android:padding="5dp"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:gravity="top"
+            android:textColorHint="#9B9A9A" />
+
+        <Button
+            android:id="@+id/btnPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_round_border"
+            android:maxLines="1"
+            android:text="Post" />
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>
